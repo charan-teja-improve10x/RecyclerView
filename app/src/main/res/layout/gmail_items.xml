@@ -40,7 +40,7 @@
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/time_txt"
+            android:id="@+id/notification_time_txt"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingTop="8dp"

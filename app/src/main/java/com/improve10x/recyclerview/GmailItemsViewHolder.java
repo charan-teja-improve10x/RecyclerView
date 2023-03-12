@@ -17,7 +17,7 @@ public class GmailItemsViewHolder extends RecyclerView.ViewHolder {
         super(itemView);
         nameTxt = itemView.findViewById(R.id.name_txt);
         subjectTxt = itemView.findViewById(R.id.subject_txt);
-        timeTxt = itemView.findViewById(R.id.time_txt);
+        timeTxt = itemView.findViewById(R.id.notification_time_txt);
         profileIv = itemView.findViewById(R.id.profile_iv);
     }
 }
