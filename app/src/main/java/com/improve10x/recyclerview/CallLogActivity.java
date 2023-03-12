@@ -66,7 +66,7 @@ public class CallLogActivity extends AppCompatActivity {
     }
 
     public void connectAdapter(){
-        callsRv.setLayoutManager(new GridLayoutManager(this,1));
+        callsRv.setLayoutManager(new LinearLayoutManager(this));
         callsRv.setAdapter(callsItemAdapter);
     }
 }
