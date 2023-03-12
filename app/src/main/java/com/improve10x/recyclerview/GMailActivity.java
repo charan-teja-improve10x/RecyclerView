@@ -71,7 +71,7 @@ public class GMailActivity extends AppCompatActivity {
     }
 
     public void connectAdapter(){
-        mailsRv.setLayoutManager(new LinearLayoutManager(this));
+        mailsRv.setLayoutManager(new GridLayoutManager(this,1));
         mailsRv.setAdapter(gmailItemsAdapter);
     }
     }
