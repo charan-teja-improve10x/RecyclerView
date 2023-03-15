@@ -10,6 +10,7 @@ import android.widget.HorizontalScrollView;
 
 public class InstagramActivity extends AppCompatActivity {
     InstagramItemAdapter instagramItemAdapter;
+    InstagramItemAdapter instaSuggetionsAdapter;
     RecyclerView favoritesRv;
     RecyclerView suggetionsRv;
     InstagramItems[] instagramItems;
@@ -55,11 +56,14 @@ public class InstagramActivity extends AppCompatActivity {
 
     public void createFavoriteAdapter(){
        instagramItemAdapter = new InstagramItemAdapter(instagramItems);
+       instaSuggetionsAdapter = new InstagramItemAdapter(instagramItems);
     }
 
     public void connectAdapter(){
         favoritesRv.setLayoutManager(new LinearLayoutManager(this));
         favoritesRv.setAdapter(instagramItemAdapter);
+        suggetionsRv.setLayoutManager(new LinearLayoutManager(this,LinearLayoutManager.HORIZONTAL,false));
+        suggetionsRv.setAdapter(instaSuggetionsAdapter);
     }
 
 }

@@ -46,4 +46,13 @@
         android:text="Remove"
         android:textColor="#655B5B"
         android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:backgroundTint="#00AEFF"
+        android:text="Add"
+        android:visibility="gone" />
 </LinearLayout>
